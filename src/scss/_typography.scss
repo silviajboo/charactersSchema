@@ -1,0 +1,142 @@
+html {
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+body {
+    font-size: 14px; 
+    line-height: 1.3rem;
+    font-family: 'Montserrat', sans-serif;    
+    font-weight: 400;
+    text-rendering: optimizeLegibility;
+    max-width:100%;  
+    min-width: 320px;
+    height: auto;
+    /*MEDIA QUERIES*/
+    /*Tablet*/
+    @media only screen and (min-width: 768px) and (max-width: 1023px){
+        font-size: 16px; 
+        line-height: 1.5rem;
+    }
+
+    /*Desktop*/
+    @media only screen and (min-width: 1024px){
+        font-size: 16px; 
+        line-height: 1.5rem;
+    } 
+}
+
+a{
+    text-decoration: none;
+    color: inherit;
+}
+
+p{
+    font-family: 'Domine', serif;
+    font-weight: 400;
+    font-size: .9rem;
+    line-height: 1.3rem;
+    display: block;
+
+    /*MEDIA QUERIES*/
+    /*Tablet*/
+    @media only screen and (min-width: 768px) and (max-width: 1023px){
+        font-size: 1rem;
+        line-height: 1.5rem;
+    }
+
+    /*Desktop*/
+    @media only screen and (min-width: 1024px){
+        font-size: 1rem;
+        line-height: 1.5rem;
+    } 
+}
+
+h1{
+    font-size: 2rem;
+    line-height: 2.2rem;
+    font-weight: 700;
+    /*MEDIA QUERIES*/
+    /*Tablet*/
+    @media only screen and (min-width: 768px) and (max-width: 1023px){
+        font-size: 2.5rem;
+        line-height: 2.7rem;
+    }
+
+    /*Desktop*/
+    @media only screen and (min-width: 1024px){
+        font-size: 2.5rem;
+        line-height: 2.7rem;
+    } 
+}
+
+h2{
+    font-size: 1.25rem;
+    line-height: 1.5rem;
+    font-weight: 700;
+    /*MEDIA QUERIES*/
+    /*Tablet*/
+    @media only screen and (min-width: 768px) and (max-width: 1023px){
+        font-size: 1.75rem;
+        line-height: 2rem;
+    }
+
+    /*Desktop*/
+    @media only screen and (min-width: 1024px){
+        font-size: 1.75rem;
+        line-height: 2rem;
+    }
+}
+
+h3{
+    font-size: 1.35rem;
+    line-height: 1.8rem;
+    font-weight: 700;
+}
+.h3-t1{
+    font-size: 2.5rem;
+    line-height: 2.7rem;
+    font-weight: 700;
+}
+.h3-t2{
+    font-size: 1.75rem;
+    line-height: 2rem;
+    font-weight: 700;
+}
+
+h4{
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.2rem;
+}
+
+h5{
+    font-size: 0.75rem;
+    font-weight: 400;
+    line-height: 1rem;
+}
+
+h6{
+    font-size: 0.625rem;
+    font-weight: 400;
+    line-height: 1rem;
+}
+
+ol, ul {
+    list-style: none;
+}
+
+li {
+    display: list-item;
+    text-align: -webkit-match-parent;
+}
+
+nav{
+    text-transform: uppercase;
+}
+
+.txt-uppercase{
+    text-transform: uppercase;
+}
