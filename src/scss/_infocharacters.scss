@@ -3,9 +3,9 @@
     background-position: center;
     background-size: 100%; // background-attachment: fixed;
     width: 100%;
-    height: 90vh;
-    position: relative;
-    background-color: black;
+    height: 50vh;
+    margin-top: 100px;
+
 
     /*MEDIA QUERIES*/
     /*Tablet*/
@@ -16,12 +16,13 @@
     /*Desktop*/
     @media only screen and (min-width: 1024px) {
         background: url('../img/twd2.jpeg') no-repeat;
-        background-size: cover;
+        background-size: contain;
+        background-position: center;
     }
 }
 
 .info-characters-group{
-	  display: flex;
+	display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
@@ -47,10 +48,28 @@
 }
 
 .info-character-basics {
-    border: 1px solid black;
+    // border: 1px solid white;
     
     // display: flex;
     // flex-flow: row wrap;
+}
+
+.info-character-basics:hover .info-character-basics--moreinfo,
+.info-character-basics:active .info-character-basics--moreinfo{
+	display: block;
+}
+
+.info-character-basics--moreinfo{
+	display: none;
+	width: inherit;
+	height: inherit;
+	background-color: $colorBlack;
+	opacity: .8;
+	position: absolute;
+    top: 0;
+    left: 0;
+    background-image: url('../img/ic_moreinfo.png');
+    content:'bdflabdflbal';
 }
 
 .info-character--photo{
@@ -58,8 +77,9 @@
 }
 
 .info-character--votes {
-   
+   margin: 10px;
 }
 
 .info-character--name {
+	margin: 10px;
 }
