@@ -259,6 +259,20 @@ nav {
   background: url("../img/ic_moreinfo.png") no-repeat;
   background-size: auto 100%; }
 
+.info-character-extended {
+  display: none;
+  position: absolute;
+  left: 0;
+  width: 100%;
+  height: auto;
+  background-color: #141414;
+  z-index: 1000; }
+
+.info-character:hover .info-character-extended {
+  display: block;
+  -webkit-animation: slide-down .3s ease-out;
+          animation: slide-down .3s ease-out; }
+
 .info-character--votes {
   margin: 10px; }
 
@@ -268,11 +282,36 @@ nav {
 #info-characters-alive {
   display: block; }
 
-#info-characters-dead {
-  display: none; }
-
+#info-characters-dead,
 #info-seasons {
   display: none; }
+
+.info-character-extended-description {
+  display: block; }
+
+.info-character-extended-history,
+.info-character-extended-performer {
+  display: none; }
+
+@-webkit-keyframes slide-down {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateY(-100%);
+            transform: translateY(-100%); }
+  100% {
+    opacity: 1;
+    -webkit-transform: translateY(0);
+            transform: translateY(0); } }
+
+@keyframes slide-down {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateY(-100%);
+            transform: translateY(-100%); }
+  100% {
+    opacity: 1;
+    -webkit-transform: translateY(0);
+            transform: translateY(0); } }
 
 .header {
   opacity: 0.7;
@@ -288,23 +327,33 @@ nav {
   .header .menu {
     color: #e5e5e5; }
 
-.menu {
+.menu,
+.menu-extended {
   width: 100%;
   text-align: center;
   opacity: 1;
   z-index: 999; }
 
-.menu li {
+.menu li,
+.menu-extended li {
   display: inline-block;
   padding: 5% 5% 0% 5%; }
   @media only screen and (min-width: 768px) and (max-width: 1023px) {
-    .menu li {
+    .menu li,
+    .menu-extended li {
       padding: 5% 5% 0% 5%; } }
   @media only screen and (min-width: 1024px) {
-    .menu li {
+    .menu li,
+    .menu-extended li {
       padding: 5% 5% 1% 5%; } }
 
-.menu li a:hover {
+.menu li a:hover,
+.menu-extended li a:hover {
+  padding-bottom: .5rem;
+  border-bottom: 2px solid #E6614D;
+  color: #891819; }
+
+.menu--active {
   padding-bottom: .5rem;
   border-bottom: 2px solid #E6614D;
   color: #891819; }

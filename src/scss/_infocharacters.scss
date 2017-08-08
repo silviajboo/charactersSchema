@@ -34,6 +34,7 @@
     display: flex;
     flex-basis: 90%;
     min-width: 400px;
+    
 
     /*MEDIA QUERIES*/
     /*Tablet*/
@@ -47,16 +48,31 @@
     }
 }
 
-// .info-character-basics {
-//     position: static;
-// }
-// .info-character-basics:hover.info-character-basics--moreinfo,
-// .info-character-basics:active.info-character-basics--moreinfo{
-// 	display: block;
-// }
+.info-character-basics{
+	
+}
+
 .info-character-basics--moreinfo {
     background: url('../img/ic_moreinfo.png') no-repeat;
     background-size: auto 100%;
+}
+
+.info-character-extended {
+    display: none; 
+    position: absolute;
+    left: 0;
+    
+    width: 100%;
+    height: auto;
+    background-color: $colorBlack;
+    z-index: 1000;
+    // // flex-grow:3;
+    // flex-shrink: 3;
+}
+
+.info-character:hover .info-character-extended {
+    display: block;
+    animation: slide-down .3s ease-out;
 }
 
 .info-character--photo {}
@@ -73,13 +89,26 @@
     display: block;
 }
 
-.li-dead:hover,
-.li-dead:active {}
-
-#info-characters-dead {
-    display: none;
-}
-
+#info-characters-dead, 
 #info-seasons {
     display: none;
+}
+.info-character-extended-description{
+	display: block;
+}
+.info-character-extended-history,
+.info-character-extended-performer{
+	display: none;
+}
+
+
+@keyframes slide-down {
+    0% {
+        opacity: 0;
+        transform: translateY(-100%);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
 }

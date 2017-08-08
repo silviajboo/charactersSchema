@@ -1,4 +1,5 @@
-.menu {
+.menu,
+.menu-extended {
     width: 100%;
     // height: inherit;
     text-align: center;
@@ -6,7 +7,8 @@
     z-index: 999;
 }
 
-.menu li {
+.menu li ,
+.menu-extended li{
     display: inline-block;
     padding: 5% 5% 0% 5%; 
 
@@ -20,7 +22,14 @@
     }
 }
 
-.menu li a:hover {
+.menu li a:hover,
+.menu-extended li a:hover {
+    padding-bottom: .5rem;
+    border-bottom: 2px solid $colorRedLight;
+    color: $colorRedDark;
+}
+
+.menu--active {
     padding-bottom: .5rem;
     border-bottom: 2px solid $colorRedLight;
     color: $colorRedDark;
