@@ -1,3 +1,14 @@
+.menu {  
+	margin-top: 130px;
+	// MEDIA QUERIES    
+    @media only screen and (min-width: 768px) and (max-width: 1023px) {
+        margin-top: 110px;
+    }
+
+    @media only screen and (min-width: 1024px) {
+        margin-top: 90px;
+    }
+}
 .menu,
 .menu-extended {
     width: 100%;
@@ -10,15 +21,15 @@
 .menu li ,
 .menu-extended li{
     display: inline-block;
-    padding: 5% 5% 0% 5%; 
+    padding: 2% 5% 0% 5%; 
 
     // MEDIA QUERIES    
     @media only screen and (min-width: 768px) and (max-width: 1023px) {
-        padding: 5% 5% 0% 5%;
+        padding: 2% 5% 0% 5%;
     }
 
     @media only screen and (min-width: 1024px) {
-        padding: 5% 5% 1% 5%;
+        padding: 60px 50px 1px 50px;
     }
 }
 
