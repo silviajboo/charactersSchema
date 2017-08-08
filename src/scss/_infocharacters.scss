@@ -1,85 +1,85 @@
 .info-characters-bigphoto {
-    background: url('../img/twd1.jpeg') no-repeat;
+    background: url('../img/twd3.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
     background-position: center;
-    background-size: 100%; // background-attachment: fixed;
-    width: 100%;
-    height: 50vh;
-    margin-top: 100px;
 
+    width: 100%;
+    height: 30vh;
+    min-width: 100px;
+    position: relative;
 
     /*MEDIA QUERIES*/
     /*Tablet*/
     @media only screen and (min-width: 768px) and (max-width: 1023px) {
-        background-size: 200%;
+        background: url('../img/twd3.jpg') no-repeat;
     }
 
     /*Desktop*/
     @media only screen and (min-width: 1024px) {
-        background: url('../img/twd2.jpeg') no-repeat;
-        background-size: contain;
-        background-position: center;
+        background: url('../img/redClouds.jpg') no-repeat;
+        background-size: cover;
     }
 }
 
-.info-characters-group{
-	display: flex;
+.info-characters-group {
+    display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
     align-content: center;
-	
 }
 
-.info-character{
-	display: flex;
-	flex-basis: 90%;
-	min-width: 400px;	
+.info-character {
+    display: flex;
+    flex-basis: 90%;
+    min-width: 400px;
 
     /*MEDIA QUERIES*/
     /*Tablet*/
     @media only screen and (min-width: 768px) and (max-width: 1279px) {
-         flex-basis: 50%;
+        flex-basis: 50%;
     }
 
     /*Desktop*/
-    @media only screen and (min-width: 1280px) {    
+    @media only screen and (min-width: 1280px) {
         flex-basis: 30%;
     }
 }
 
-.info-character-basics {
-    // border: 1px solid white;
-    
-    // display: flex;
-    // flex-flow: row wrap;
+// .info-character-basics {
+//     position: static;
+// }
+// .info-character-basics:hover.info-character-basics--moreinfo,
+// .info-character-basics:active.info-character-basics--moreinfo{
+// 	display: block;
+// }
+.info-character-basics--moreinfo {
+    background: url('../img/ic_moreinfo.png') no-repeat;
+    background-size: auto 100%;
 }
 
-.info-character-basics:hover .info-character-basics--moreinfo,
-.info-character-basics:active .info-character-basics--moreinfo{
-	display: block;
-}
-
-.info-character-basics--moreinfo{
-	display: none;
-	width: inherit;
-	height: inherit;
-	background-color: $colorBlack;
-	opacity: .8;
-	position: absolute;
-    top: 0;
-    left: 0;
-    background-image: url('../img/ic_moreinfo.png');
-    content:'bdflabdflbal';
-}
-
-.info-character--photo{
-	
-}
+.info-character--photo {}
 
 .info-character--votes {
-   margin: 10px;
+    margin: 10px;
 }
 
 .info-character--name {
-	margin: 10px;
+    margin: 10px;
+}
+
+#info-characters-alive {
+    display: block;
+}
+
+.li-dead:hover,
+.li-dead:active {}
+
+#info-characters-dead {
+    display: none;
+}
+
+#info-seasons {
+    display: none;
 }

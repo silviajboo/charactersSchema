@@ -13,16 +13,18 @@
 
 <body>
     <header class="header">
-        <h1>The Walking Dead Survivors</h1>
+        <h1>The Walking Dead face to face</h1>
+        <nav class="menu">
+            <ul>
+                <li><a href="#" class="li-alive">Vivos</a></li>
+                <li><a href="#" class="li-dead">Fallecidos</a></li>
+                <li><a href="#" class="li-seasons">Temporadas</a></li>
+            </ul>
+        </nav>
     </header>
     <div class="info-characters-bigphoto">
-        <!-- simple menu inside with
-                - Personajes vivos
-                - Personajes fallecidos
-                - Temporadas
-        -->
     </div>
-    <div class="info-characters-alive">
+    <div id="info-characters-alive">
         <div class="info-characters-group">
             <div class="info-character info-character-one">
                 <div class="info-character-basics flex-row">
@@ -54,9 +56,7 @@
                 </div>
             </div>
             <div class="info-character info-character-two">
-                <div class="info-character-basics flex-row">
-                    <div class="info-character-basics--moreinfo">
-                    </div>
+                <div class="flex-row info-character-basics">
                     <div class="info-character--photo">
                         <img src="img/maggie.jpeg">
                     </div>
@@ -69,8 +69,8 @@
                             <span class="star-five star-five--active"></span>
                         </div>
                         <h3 class="info-character--name">Maggie Greene</h3>
+                        <div class="info-character-basics--moreinfo"></div>
                     </div>
-                    
                 </div>
                 <div class="info-character-extended disabled">
                     <div class="info-character-extended-description">
@@ -157,53 +157,58 @@
                 </div>
             </div>
         </div>
-        <div class="info-characters-dead">
-            <div class="info-characters-group">
-                <div class="info-character-one">
-                    <div>
-                        <!-- info básica character -->
-                    </div>
-                    <div>
-                        <!-- info ampliada personaje oculta -->
-                    </div>
+    </div>
+    <div id="info-characters-dead">
+        <div class="info-characters-group">
+            <div class="info-character-one">
+                <div>
+                    <!-- info básica character -->
                 </div>
-                <div class="info-character-two">
-                    <div>
-                        <!-- info básica character -->
-                    </div>
-                    <div>
-                        <!-- info ampliada personaje oculta -->
-                    </div>
-                </div>
-                <div class="info-character-three">
-                    <div>
-                        <!-- info básica character -->
-                    </div>
-                    <div>
-                        <!-- info ampliada personaje oculta -->
-                    </div>
-                </div>
-                <div class="info-character-four">
-                    <div>
-                        <!-- info básica character -->
-                    </div>
-                    <div>
-                        <!-- info ampliada personaje oculta -->
-                    </div>
-                </div>
-                <div class="info-character-five">
-                    <div>
-                        <!-- info básica character -->
-                    </div>
-                    <div>
-                        <!-- info ampliada personaje oculta -->
-                    </div>
+                <div>
+                    <!-- info ampliada personaje oculta -->
                 </div>
             </div>
-            <div class="info-seasons">
+            <div class="info-character-two">
+                <div>
+                    <!-- info básica character -->
+                </div>
+                <div>
+                    <!-- info ampliada personaje oculta -->
+                </div>
             </div>
-            <footer class="footer">
-            </footer>
+            <div class="info-character-three">
+                <div>
+                    <!-- info básica character -->
+                </div>
+                <div>
+                    <!-- info ampliada personaje oculta -->
+                </div>
+            </div>
+            <div class="info-character-four">
+                <div>
+                    <!-- info básica character -->
+                </div>
+                <div>
+                    <!-- info ampliada personaje oculta -->
+                </div>
+            </div>
+            <div class="info-character-five">
+                <div>
+                    <!-- info básica character -->
+                </div>
+                <div>
+                    <!-- info ampliada personaje oculta -->
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="info-seasons">
+    </div>
+    <footer class="footer">
+    </footer>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+    <script src="js/menu.js"></script>
 </body>
 
 </html>
