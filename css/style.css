@@ -300,6 +300,8 @@ nav {
       align-self: center;
   -webkit-animation: slide-up .3s ease-out;
           animation: slide-up .3s ease-out;
+  -ms-flex-item-align: baseline;
+      align-self: baseline;
   /*MEDIA QUERIES*/
   /*Tablet*/
   /*Desktop*/ }
