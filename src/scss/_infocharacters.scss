@@ -50,6 +50,13 @@
     background-size: auto 100%;
 }
 
+
+.info-character-basics:hover .flex-column{
+	background-color: $colorBlack;
+	background: url('../img/ic_expandmore_white.png') no-repeat;
+	background-position: bottom center;
+}
+
 .info-character-extended {
     display: none; 
     position: relative;
@@ -73,9 +80,10 @@
     @media only screen and (min-width: 1280px) {
         width: 300%;
     }
+
 }
 
-.info-character:hover .info-character-extended {
+.info-character-extended--active {
     display: block;
     animation: slide-down .3s ease-out;
 }

@@ -1,3 +1,14 @@
+.clearfix:before,
+.clearfix:after {
+  content: " ";
+  display: table; }
+
+.clearfix:after {
+  clear: both; }
+
+.clearfix {
+  *zoom: 1; }
+
 /*color variables*/
 .flex-row {
   display: -webkit-box;
@@ -258,6 +269,11 @@ nav {
   background: url("../img/ic_moreinfo.png") no-repeat;
   background-size: auto 100%; }
 
+.info-character-basics:hover .flex-column {
+  background-color: #141414;
+  background: url("../img/ic_expandmore_white.png") no-repeat;
+  background-position: bottom center; }
+
 .info-character-extended {
   display: none;
   position: relative;
@@ -283,7 +299,7 @@ nav {
     .info-character-extended {
       width: 300%; } }
 
-.info-character:hover .info-character-extended {
+.info-character-extended--active {
   display: block;
   -webkit-animation: slide-down .3s ease-out;
           animation: slide-down .3s ease-out; }
@@ -378,18 +394,25 @@ nav {
   opacity: 1;
   z-index: 999; }
 
-.menu li,
+.menu li {
+  display: inline-block;
+  padding: 2% 5% 0% 5%; }
+  @media only screen and (min-width: 768px) and (max-width: 1023px) {
+    .menu li {
+      padding: 2% 5% 0% 5%; } }
+  @media only screen and (min-width: 1024px) {
+    .menu li {
+      padding: 60px 50px 1px 50px; } }
+
 .menu-extended li {
   display: inline-block;
   padding: 2% 5% 0% 5%; }
   @media only screen and (min-width: 768px) and (max-width: 1023px) {
-    .menu li,
     .menu-extended li {
       padding: 2% 5% 0% 5%; } }
   @media only screen and (min-width: 1024px) {
-    .menu li,
     .menu-extended li {
-      padding: 60px 50px 1px 50px; } }
+      padding: 10px 50px 1px 50px; } }
 
 .menu li a:hover,
 .menu-extended li a:hover {
