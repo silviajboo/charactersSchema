@@ -218,16 +218,20 @@ nav {
 
 #info-characters-dead,
 #info-seasons {
-  display: none; }
+  display: none;
+  position: absolute;
+  top: 30vh; }
 
-.info-character-extended-description {
+.info-character-extended-description,
+.info-season-extended-description {
   display: block; }
 
 .info-character-extended-history,
 .info-character-extended-performer {
   display: none; }
 
-.info-characters-group {
+.info-characters-group,
+.info-seasons-group {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -243,7 +247,8 @@ nav {
   -ms-flex-line-pack: center;
       align-content: center; }
 
-.info-character {
+.info-character,
+.info-season {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -254,27 +259,33 @@ nav {
   /*Tablet*/
   /*Desktop*/ }
   @media only screen and (min-width: 768px) and (max-width: 1279px) {
-    .info-character {
+    .info-character,
+    .info-season {
       -ms-flex-preferred-size: 50%;
           flex-basis: 50%; } }
   @media only screen and (min-width: 1280px) {
-    .info-character {
+    .info-character,
+    .info-season {
       -ms-flex-preferred-size: 30%;
           flex-basis: 30%; } }
 
-.info-character-basics {
+.info-character-basics,
+.info-season-basics {
   position: static; }
 
-.info-character-basics--moreinfo {
+.info-character-basics--moreinfo,
+.info-season-basics--moreinfo {
   background: url("../img/ic_moreinfo.png") no-repeat;
   background-size: auto 100%; }
 
-.info-character-basics:hover .flex-column {
+.info-character-basics:hover .flex-column,
+.info-season-basics:hover .flex-column {
   background-color: #141414;
   background: url("../img/ic_expandmore_white.png") no-repeat;
   background-position: bottom center; }
 
-.info-character-extended {
+.info-character-extended,
+.info-season-extended {
   display: none;
   position: relative;
   left: 0;
@@ -293,21 +304,26 @@ nav {
   /*Tablet*/
   /*Desktop*/ }
   @media only screen and (min-width: 768px) and (max-width: 1279px) {
-    .info-character-extended {
+    .info-character-extended,
+    .info-season-extended {
       width: 200%; } }
   @media only screen and (min-width: 1280px) {
-    .info-character-extended {
+    .info-character-extended,
+    .info-season-extended {
       width: 300%; } }
 
-.info-character-extended--active {
+.info-character-extended--active,
+.info-season-extended--active {
   display: block;
   -webkit-animation: slide-down .3s ease-out;
           animation: slide-down .3s ease-out; }
 
-.info-character--votes {
+.info-character--votes,
+.info-season--votes {
   margin: 10px; }
 
-.info-character--name {
+.info-character--name,
+.info-season--name {
   margin: 10px; }
 
 /*Keyframes for animations extended info characters*/

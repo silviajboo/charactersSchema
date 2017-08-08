@@ -3,20 +3,26 @@
     position: absolute;
     top: 30vh;
 }
-#info-characters-dead, 
+
+#info-characters-dead,
 #info-seasons {
+    display: none;
+    position: absolute;
+    top: 30vh;
+}
+
+.info-character-extended-description,
+.info-season-extended-description {
+    display: block;
+}
+
+.info-character-extended-history,
+.info-character-extended-performer {
     display: none;
 }
 
-.info-character-extended-description{
-	display: block;
-}
-.info-character-extended-history,
-.info-character-extended-performer{
-	display: none;
-}
-
-.info-characters-group {
+.info-characters-group,
+.info-seasons-group {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -24,11 +30,12 @@
     align-content: center;
 }
 
-.info-character {
+.info-character,
+.info-season {
     display: flex;
     flex-basis: 90%;
     min-width: 400px;
-    
+
     /*MEDIA QUERIES*/
     /*Tablet*/
     @media only screen and (min-width: 768px) and (max-width: 1279px) {
@@ -41,24 +48,28 @@
     }
 }
 
-.info-character-basics{
-	position: static;
+.info-character-basics,
+.info-season-basics {
+    position: static;
 }
 
-.info-character-basics--moreinfo {
+.info-character-basics--moreinfo,
+.info-season-basics--moreinfo {
     background: url('../img/ic_moreinfo.png') no-repeat;
     background-size: auto 100%;
 }
 
 
-.info-character-basics:hover .flex-column{
-	background-color: $colorBlack;
-	background: url('../img/ic_expandmore_white.png') no-repeat;
-	background-position: bottom center;
+.info-character-basics:hover .flex-column,
+.info-season-basics:hover .flex-column {
+    background-color: $colorBlack;
+    background: url('../img/ic_expandmore_white.png') no-repeat;
+    background-position: bottom center;
 }
 
-.info-character-extended {
-    display: none; 
+.info-character-extended,
+.info-season-extended {
+    display: none;
     position: relative;
     left: 0;
     right: 0;
@@ -68,7 +79,7 @@
     z-index: 1;
     padding: 0 50px 50px 50px;
     align-self: center;
-	animation: slide-up .3s ease-out;
+    animation: slide-up .3s ease-out;
 
     /*MEDIA QUERIES*/
     /*Tablet*/
@@ -80,26 +91,30 @@
     @media only screen and (min-width: 1280px) {
         width: 300%;
     }
-
 }
 
-.info-character-extended--active {
+.info-character-extended--active,
+.info-season-extended--active  {
     display: block;
     animation: slide-down .3s ease-out;
 }
 
 .info-character--photo {}
 
-.info-character--votes {
+.info-character--votes,
+.info-season--votes {
     margin: 10px;
 }
 
-.info-character--name {
+.info-character--name,
+.info-season--name {
     margin: 10px;
 }
+
 
 
 /*Keyframes for animations extended info characters*/
+
 @keyframes slide-down {
     0% {
         opacity: 0;
@@ -122,27 +137,3 @@
     }
 }
 
-
-// .info-characters-bigphoto {
-//     background: url('../img/twd3.jpg');
-//     background-repeat: no-repeat;
-//     background-size: cover;
-//     background-position: center;
-
-//     width: 100%;
-//     height: 30vh;
-//     min-width: 100px;
-//     position: relative;
-
-//     /*MEDIA QUERIES*/
-//     /*Tablet*/
-//     @media only screen and (min-width: 768px) and (max-width: 1023px) {
-//         background: url('../img/twd3.jpg') no-repeat;
-//     }
-
-//     /*Desktop*/
-//     @media only screen and (min-width: 1024px) {
-//         background: url('../img/redClouds.jpg') no-repeat;
-//         background-size: cover;
-//     }
-// }
