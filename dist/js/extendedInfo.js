@@ -8,6 +8,7 @@ $(document).ready(function() {
             $('.info-character-extended').removeClass('info-character-extended--active');
             $(this).siblings().select('.info-character-extended').addClass('info-character-extended--active');
         }
+
     });
 
    $(".info-season-basics").on("click", function() {

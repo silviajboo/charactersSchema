@@ -39,7 +39,7 @@ $(document).ready(function() {
         $('.info-character-extended-performer').hide();
 
         $('.menu-extended li a').removeClass('menu--active');
-        $(this).addClass('menu--active');
+        $('.li-description').addClass('menu--active');
     });
 
     $(".li-history").on("click", function() {
@@ -48,7 +48,7 @@ $(document).ready(function() {
         $('.info-character-extended-performer').hide();
 
         $('.menu-extended li a').removeClass('menu--active');
-        $(this).addClass('menu--active');
+        $('.li-history').addClass('menu--active');
 
     });
 
@@ -58,7 +58,7 @@ $(document).ready(function() {
         $('.info-character-extended-performer').show();
 
         $('.menu-extended li a').removeClass('menu--active');
-        $(this).addClass('menu--active');
+        $('.li-performer').addClass('menu--active');
 
     });
 
