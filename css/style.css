@@ -298,10 +298,10 @@ nav {
   -ms-flex-item-align: center;
       -ms-grid-row-align: center;
       align-self: center;
-  -webkit-animation: slide-up .3s ease-out;
-          animation: slide-up .3s ease-out;
   -ms-flex-item-align: baseline;
       align-self: baseline;
+  -webkit-animation: slide-up .3s ease-in;
+          animation: slide-up .3s ease-in;
   /*MEDIA QUERIES*/
   /*Tablet*/
   /*Desktop*/ }
@@ -478,21 +478,21 @@ nav {
             transform: translateY(25%); } }
 
 @-webkit-keyframes slide-up {
-  100% {
+  0% {
     opacity: 1;
     -webkit-transform: translateY(25%);
             transform: translateY(25%); }
-  0% {
+  100% {
     opacity: 0;
     -webkit-transform: translateY(-25%);
             transform: translateY(-25%); } }
 
 @keyframes slide-up {
-  100% {
+  0% {
     opacity: 1;
     -webkit-transform: translateY(25%);
             transform: translateY(25%); }
-  0% {
+  100% {
     opacity: 0;
     -webkit-transform: translateY(-25%);
             transform: translateY(-25%); } }
@@ -544,7 +544,7 @@ nav {
 
 .menu li {
   display: inline-block;
-  padding: 2% 5% 0% 5%; }
+  padding: 2% 4% 0% 4%; }
   @media only screen and (min-width: 768px) and (max-width: 1023px) {
     .menu li {
       padding: 2% 5% 0% 5%; } }
@@ -554,7 +554,7 @@ nav {
 
 .menu-extended li {
   display: inline-block;
-  padding: 2% 5% 0% 5%; }
+  padding: 2% 2% 0% 2%; }
   @media only screen and (min-width: 768px) and (max-width: 1023px) {
     .menu-extended li {
       padding: 2% 5% 0% 5%; } }
