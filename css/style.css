@@ -308,11 +308,11 @@ nav {
   @media only screen and (min-width: 768px) and (max-width: 1279px) {
     .info-character-extended,
     .info-season-extended {
-      width: 200%; } }
+      width: 185%; } }
   @media only screen and (min-width: 1280px) {
     .info-character-extended,
     .info-season-extended {
-      width: 300%; } }
+      width: 275%; } }
 
 .info-character-extended--active,
 .info-season-extended--active {
@@ -327,6 +327,135 @@ nav {
 .info-character--name,
 .info-season--name {
   margin: 10px; }
+
+.info-character-one,
+.info-season-one {
+  left: 0;
+  /*MEDIA QUERIES*/
+  /*Tablet*/
+  /*Desktop*/ }
+  @media only screen and (min-width: 768px) and (max-width: 1279px) {
+    .info-character-one,
+    .info-season-one {
+      left: 8%; } }
+  @media only screen and (min-width: 1280px) {
+    .info-character-one,
+    .info-season-one {
+      left: 8%; } }
+
+.info-character-two,
+.info-season-two {
+  left: 0;
+  /*MEDIA QUERIES*/
+  /*Tablet*/
+  /*Desktop*/ }
+  @media only screen and (min-width: 768px) and (max-width: 1279px) {
+    .info-character-two,
+    .info-season-two {
+      left: -90%; } }
+  @media only screen and (min-width: 1280px) {
+    .info-character-two,
+    .info-season-two {
+      left: -90%; } }
+
+.info-character-three,
+.info-season-three {
+  left: 0;
+  /*MEDIA QUERIES*/
+  /*Tablet*/
+  /*Desktop*/ }
+  @media only screen and (min-width: 768px) and (max-width: 1279px) {
+    .info-character-three,
+    .info-season-three {
+      left: 8%; } }
+  @media only screen and (min-width: 1280px) {
+    .info-character-three,
+    .info-season-three {
+      left: -190%; } }
+
+.info-character-four {
+  left: 0;
+  /*MEDIA QUERIES*/
+  /*Tablet*/
+  /*Desktop*/ }
+  @media only screen and (min-width: 768px) and (max-width: 1279px) {
+    .info-character-four {
+      left: -90%; } }
+  @media only screen and (min-width: 1280px) {
+    .info-character-four {
+      left: -40%; } }
+
+.info-season-four {
+  left: 0;
+  /*MEDIA QUERIES*/
+  /*Tablet*/
+  /*Desktop*/ }
+  @media only screen and (min-width: 768px) and (max-width: 1279px) {
+    .info-season-four {
+      left: -90%; } }
+  @media only screen and (min-width: 1280px) {
+    .info-season-four {
+      left: 8%; } }
+
+.info-character-five {
+  left: 0;
+  /*MEDIA QUERIES*/
+  /*Tablet*/
+  /*Desktop*/ }
+  @media only screen and (min-width: 768px) and (max-width: 1279px) {
+    .info-character-five {
+      left: -40%; } }
+  @media only screen and (min-width: 1280px) {
+    .info-character-five {
+      left: -140%; } }
+
+.info-season-five {
+  left: 0;
+  /*MEDIA QUERIES*/
+  /*Tablet*/
+  /*Desktop*/ }
+  @media only screen and (min-width: 768px) and (max-width: 1279px) {
+    .info-season-five {
+      left: 8%; } }
+  @media only screen and (min-width: 1280px) {
+    .info-season-five {
+      left: -90%; } }
+
+.info-season-six {
+  left: 0;
+  /*MEDIA QUERIES*/
+  /*Tablet*/
+  /*Desktop*/ }
+  @media only screen and (min-width: 768px) and (max-width: 1279px) {
+    .info-season-six {
+      left: -90%; } }
+  @media only screen and (min-width: 1280px) {
+    .info-season-six {
+      left: -190%; } }
+
+.info-season-seven {
+  left: 0;
+  /*MEDIA QUERIES*/
+  /*Tablet*/
+  /*Desktop*/ }
+  @media only screen and (min-width: 768px) and (max-width: 1279px) {
+    .info-season-seven {
+      left: 8%; } }
+  @media only screen and (min-width: 1280px) {
+    .info-season-seven {
+      left: -40%; } }
+
+.info-season-eight {
+  left: 0;
+  /*MEDIA QUERIES*/
+  /*Tablet*/
+  /*Desktop*/ }
+  @media only screen and (min-width: 768px) and (max-width: 1279px) {
+    .info-season-eight {
+      left: -90%; } }
+  @media only screen and (min-width: 1280px) {
+    .info-season-eight {
+      left: -140%; } }
 
 /*Keyframes for animations extended info characters*/
 @-webkit-keyframes slide-down {
@@ -382,7 +511,8 @@ nav {
   background: url("../img/header_twd.jpg") no-repeat;
   background-size: auto 100%;
   background-position: center;
-  background-color: #F0E7E2; }
+  background-color: #F0E7E2;
+  border-bottom: 0.5px solid #E6614D; }
   .header .menu {
     color: #141414; }
   @media only screen and (min-width: 768px) and (max-width: 1023px) {
